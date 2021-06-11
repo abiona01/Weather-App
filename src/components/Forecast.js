@@ -11,7 +11,7 @@ function Forecast() {
 
 	const fetchData = async (state) => {
 		const key = "6eeae633e41a22ceb1c5cb15312ac885";
-		const url = `http://api.openweathermap.org/data/2.5/forecast?q=${state}&cnt=4&appid=${key}`;
+		const url = `https://api.openweathermap.org/data/2.5/forecast?q=${state}&cnt=4&appid=${key}`;
 		try {
 			const response = await axios.get(url);
 			const result = await response;

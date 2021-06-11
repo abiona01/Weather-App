@@ -1,0 +1,86 @@
+.App {
+	text-align: center;
+}
+.darkmode {
+	background: #000;
+	color: #fff;
+}
+.navbar {
+	text-align: center;
+	padding: 2rem;
+}
+.input-div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.weather-input {
+	margin: 10px 25px;
+	width: 500px;
+	height: 3rem;
+	border-radius: 20px;
+	border: none;
+	background-color: #e6d5cf;
+	outline: none;
+}
+.weather-input:hover {
+	background-color: #f7e7e1;
+}
+.submit {
+	background-color: #a08a8c;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: 600;
+	outline: none;
+	border: none;
+	padding: 0.5rem 1rem;
+}
+.weather-div {
+	width: 30%;
+	margin: 2rem auto;
+	border: 1px solid grey;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+}
+.weather-condition {
+	border-radius: 10px 10px 0 0;
+}
+.weather-info {
+	margin-top: -2rem;
+	padding: 0.5rem 0 0.2rem 0.5rem;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 0 0 10px 10px;
+}
+
+.weather-icon {
+	animation: icon-grow 5s linear 2s infinite normal forwards;
+}
+@keyframes icon-grow {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+.forecast-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.forecast-div {
+	border: 1px solid grey;
+	border-radius: 10px;
+	margin: 1rem 0.5rem;
+}
+@media screen and (max-width: 768px) {
+	.weather-div {
+		width: 70%;
+	}
+}
+span {
+	font-weight: 400;
+}
